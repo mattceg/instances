@@ -1,4 +1,4 @@
 provider "google"{
- project="matt-03"
- region="us-central1"
+ project= var.project_id
+ region= var.region
 }

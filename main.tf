@@ -8,7 +8,7 @@ data "terraform_remote_state" "network_details" {
 
 resource "google_compute_instance" "my_vm" {
 	name = "matt-03-terraform-vm-test"
-	machine_type = "e2-micro"
+	machine_type = var.type_of_machine
 	zone = "us-central1-a"
 	boot_disk {
 		initialize_params {
